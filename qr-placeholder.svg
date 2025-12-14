@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <rect width="100%" height="100%" fill="#fff" stroke="#ddd"/>
+  <text x="50%" y="45%" font-size="18" text-anchor="middle" fill="#333">QR-код будет</text>
+  <text x="50%" y="55%" font-size="14" text-anchor="middle" fill="#666">сгенерирован после размещения</text>
+  <rect x="16" y="16" width="80" height="80" fill="#000"/>
+  <rect x="224" y="16" width="80" height="80" fill="#000"/>
+  <rect x="16" y="224" width="80" height="80" fill="#000"/>
+</svg>

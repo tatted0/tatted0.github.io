@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Портфолио — Михаил Городничев</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">
+        <svg id="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="48" height="48" role="img" aria-label="Логотип">
+          <rect x="10" y="10" width="80" height="80" rx="12" fill="none" stroke="currentColor" stroke-width="6"/>
+          <text x="50" y="58" font-size="36" text-anchor="middle" fill="currentColor" font-family="Arial">II</text>
+        </svg>
+        <span class="brand">Городничев Михаил</span>
+      </a>
+
+      <nav>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <ul id="main-nav" class="nav-list">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <h1>Привет — я Михаил, студент университета ГУАП</h1>
+        <p class="lead">Я дорабатываю шаблонные сайты вручную — чтобы проект был уникальным, быстрым и удобным для пользователя.</p>
+        <p class="cta-row">
+          <a class="btn" href="#portfolio">Мои работы</a>
+          <a class="btn ghost" href="#contacts">Связаться</a>
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="images/myphoto.jpg" height="450"/>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>Обо мне</h2>
+      <p>Я — студент университета ГУАП с опытом работы более 1 года в верстке сайтов. Специализируюсь на ручной доработке шаблонных сайтов. В своей работе использую HTML, CSS, JavaScript. Моя цель — не просто получить рабочий сайт, а сделать его понятным, быстрым и выделяющимся.</p>
+      <ul class="skills">
+        <li>Доступность</li>
+        <li>Ручная доработка шаблонов</li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="container portfolio">
+      <h2>Портфолио</h2>
+      <p>Ниже — примеры проектов и работ. К каждому проекту — краткое описание.</p>
+      <div class="gallery-grid" role="list">
+        <figure role="listitem"><img src="images/work1.jpg" alt="Проект 1"><figcaption>Создание сайта с калькулятором</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contacts" class="container contacts">
+      <h2>Контакты</h2>
+      <p>Готов обсудить ваш проект — оставьте сообщение через форму ниже или напишите напрямую.</p>
+
+      <form id="contact-form" novalidate>
+        <label>Имя
+          <input type="text" id="name" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+        </label>
+        <label>Сообщение
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-row">
+          <button type="submit" class="btn">Отправить</button>
+          <button type="reset" class="btn ghost">Очистить</button>
+        </div>
+        <p id="form-status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-info">
+        <p>Телефон: <a href="tel:+79119423555">+7 (911) 911-35-55</a></p>
+        <p>Email: <a href="mailto:gorodnichev2007@bk.ru">gorodnichev2007@bk.ru</a></p>
+
+        <div class="socials">
+          <a href="https://t.me/qwizixks" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12l19-7-7 9-3 8z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="qr">
+        <p>QR-код сайта:</p>
+        <img src="images/qr-code.gif" width="160" height="160">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Городничев Михаил, 2025</p>
+      <p>Сайт сделан вручную с адаптивной версткой.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
